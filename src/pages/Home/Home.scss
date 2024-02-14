@@ -1,0 +1,9 @@
+#home {
+  padding: 40px 80px;
+
+  #home-header {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 40px;
+  }
+}
