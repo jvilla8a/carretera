@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -18,7 +19,9 @@ const Navbar = () => {
         </ul>
       </nav>
       <div>
-        <button className="secundary">Iniciar Sesion</button>
+        <Link to="/login">
+          <button className="secundary">Iniciar Sesion</button>
+        </Link>
         <button className="primary">Registrarse</button>
       </div>
     </header>

@@ -18,3 +18,14 @@ export const SEARCH = {
       .required("# de Personas es requerido"),
   }),
 };
+
+export const LOGIN = {
+  initialValues: {
+    email: "",
+    password: "",
+  },
+  validationSchema: Yup.object({
+    email: Yup.string().email("Correo Inválido").required("Correo requerido"),
+    password: Yup.string().required("Contraseña es requerida"),
+  }),
+};
